@@ -12,7 +12,7 @@ Before you begin, make sure your development environment includes [Node.js](http
 
 ```
 git clone https://github.com/pdfjs-express/pdfjs-express-viewer-angular-sample.git
-cd pdfjs-express-angular-sample
+cd pdfjs-express-viewer-angular-sample
 npm install
 ```
 
