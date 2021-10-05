@@ -21,7 +21,7 @@
     "@angular/platform-browser": "^8.2.5",
     "@angular/platform-browser-dynamic": "^8.2.5",
     "@angular/router": "^8.2.5",
-    "@pdftron/pdfjs-express-viewer": "^1.0.0",
+    "@pdftron/pdfjs-express-viewer": "^8.1.0",
     "core-js": "^2.5.4",
     "rxjs": "^6.5.3",
     "tslib": "^1.10.0",

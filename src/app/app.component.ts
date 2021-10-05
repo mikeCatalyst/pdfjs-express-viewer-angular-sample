@@ -16,7 +16,8 @@ export class AppComponent implements OnInit, AfterViewInit {
 
     WebViewer({
       path: '../lib',
-      initialDoc: '../files/demo.pdf'
+      initialDoc: '../files/demo.pdf',
+      licenseKey: 'VMeLR5MsW5lX3X9YfqQF',
     }, this.viewer.nativeElement).then(instance => {
       this.wvInstance = instance;
       // now you can access APIs through the WebViewer instance
@@ -25,6 +26,7 @@ export class AppComponent implements OnInit, AfterViewInit {
       // adding an event listener for when a document is loaded
       Core.documentViewer.addEventListener('documentLoaded', () => {
         console.log('document loaded');
+        this.wvDocumentLoadedHandler();
       });
 
       // adding an event listener for when the page number has changed
