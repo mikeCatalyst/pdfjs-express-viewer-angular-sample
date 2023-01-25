@@ -17,11 +17,11 @@ export class AppComponent implements OnInit, AfterViewInit {
     WebViewer({
       path: '../lib',
       initialDoc: '../files/demo.pdf',
-      licenseKey: 'VMeLR5MsW5lX3X9YfqQF',
+      licenseKey: 'mQBYi6GpE15MppoCJSGG',
     }, this.viewer.nativeElement).then(instance => {
       this.wvInstance = instance;
       // now you can access APIs through the WebViewer instance
-      const {Core} = instance;
+      const {Core, UI} = instance;
 
       // adding an event listener for when a document is loaded
       Core.documentViewer.addEventListener('documentLoaded', () => {
@@ -33,6 +33,8 @@ export class AppComponent implements OnInit, AfterViewInit {
       Core.documentViewer.addEventListener('pageNumberUpdated', (pageNumber) => {
         console.log(`Page number is: ${pageNumber}`);
       });
+
+      UI.setLanguage('en');
     });
   }
 
